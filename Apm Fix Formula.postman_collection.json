@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "49a212e2-c63e-49bc-934d-01ca8a2a9b60",
+		"name": "Apm Fix Formula",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Metric ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by Metric ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"metric_id\": \"IC01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:11000/apm-formula",
+					"host": [
+						"localhost"
+					],
+					"port": "11000",
+					"path": [
+						"apm-formula"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update by Metric ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"metric_id\": \"TC08\",\r\n    \"metric_name\": \"Expected Retirement Date\",\r\n    \"value_1_bb\": 0,\r\n    \"value_1_ba\": 0,\r\n    \"value_2_bb\": 0,\r\n    \"value_2_ba\": 0,\r\n    \"value_3_bb\": 0,\r\n    \"value_3_ba\": 0,\r\n    \"value_4_bb\": 0,\r\n    \"value_4_ba\": 0,\r\n    \"value_5_bb\": 0,\r\n    \"value_5_ba\": 0,\r\n    \"value_1\": \"5\",\r\n    \"value_2\": \"4\",\r\n    \"value_3\": \"3\",\r\n    \"value_4\": \"2\",\r\n    \"value_5\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:11000/apm-formula",
+					"host": [
+						"localhost"
+					],
+					"port": "11000",
+					"path": [
+						"apm-formula"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
