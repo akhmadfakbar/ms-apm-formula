@@ -10,7 +10,16 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "localhost:11000/apm-formula",
+					"host": [
+						"localhost"
+					],
+					"port": "11000",
+					"path": [
+						"apm-formula"
+					]
+				}
 			},
 			"response": []
 		},
@@ -19,7 +28,17 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "localhost:11000/apm-formula/IC01",
+					"host": [
+						"localhost"
+					],
+					"port": "11000",
+					"path": [
+						"apm-formula",
+						"IC01"
+					]
+				}
 			},
 			"response": []
 		},
