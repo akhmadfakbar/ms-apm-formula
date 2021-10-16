@@ -152,7 +152,7 @@ func UpdateApmFormula(w http.ResponseWriter, r *http.Request) {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
 		}
-		json.NewEncoder(w).Encode(structs.CreateResponse{Message: "Metric Id " + request.MetricId + " has been updated successfully!"})
+		json.NewEncoder(w).Encode(structs.CreateResponse{Message: "Metrics " + request.MetricName + " has been updated successfully!"})
 		return
 	}
 
@@ -177,7 +177,7 @@ func UpdateApmFormula(w http.ResponseWriter, r *http.Request) {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
 		}
-		json.NewEncoder(w).Encode(structs.CreateResponse{Message: "Metric Id " + request.MetricId + " has been Updated successfully!"})
+		json.NewEncoder(w).Encode(structs.CreateResponse{Message: "Metrics " + request.MetricName + " has been updated successfully!"})
 		return
 	}else {
 		json.NewEncoder(w).Encode(structs.CreateResponse{Message: "Metric Id " + request.MetricId + " not found!"})
